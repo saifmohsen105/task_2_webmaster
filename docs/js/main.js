@@ -10,7 +10,7 @@ tailwind.config = {
         poppins: ['Poppins', 'sans-serif']
       },
       backgroundImage: {
-        'home-bg': "url('/img/home3.jpg')"
+        'home-bg': "url('img/home3.jpg')"
       }
     }
   }
