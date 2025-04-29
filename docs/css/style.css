@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #020307;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff2c1f;
+  border-radius: 5rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  background-color: #ff2c1f;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -4px;
+  transition: 0.4s all linear;
+}
+
+.nav-link:hover:after,
+.home-active:after {
+  width: 100%;
+}
+
+/* Transforming images on hover */
+.movie-img {
+  transition: 0.2s all linear;
+}
+
+.movie-img:hover {
+  transform: translateY(-10px);
+}
